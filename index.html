@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon - Home</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to CSS file for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background: #232F3E;
+            color: white;
+            padding: 20px 0;
+        }
+        #company-logo {
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #232F3E;
+        }
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            background: #232F3E;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .service-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .service-item div {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,6 +115,45 @@
 </header>
 
 <main>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="https://m.media-amazon.com/images/I/61T9gB6vQjL._AC_SL1500_.jpg" alt="Online Retail">
+            <div>
+                <h3><a href="https://www.amazon.com" target="_blank">Online Retail</a></h3>
+                <p>Amazon offers a vast selection of products ranging from electronics to groceries, making shopping easy and convenient.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://m.media-amazon.com/images/I/71V5x3G5WmL._AC_SL1500_.jpg" alt="Amazon Prime Membership">
+            <div>
+                <h3><a href="https://www.amazon.com/amazonprime" target="_blank">Amazon Prime Membership</a></h3>
+                <p>Amazon Prime offers exclusive benefits like free shipping, access to Prime Video, Prime Music, and more.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://m.media-amazon.com/images/I/81HqG8w3yBL._AC_SL1500_.jpg" alt="Amazon Web Services">
+            <div>
+                <h3><a href="https://aws.amazon.com" target="_blank">Amazon Web Services (AWS)</a></h3>
+                <p>AWS provides reliable, scalable, and inexpensive cloud computing services to individuals and businesses.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://m.media-amazon.com/images/I/81c1y9t5GML._AC_SL1500_.jpg" alt="Kindle eBooks and Devices">
+            <div>
+                <h3><a href="https://www.amazon.com/kindle-dbs/hz/signup" target="_blank">Kindle eBooks and Devices</a></h3>
+                <p>Kindle devices and eBooks offer a world of reading at your fingertips, with thousands of titles available instantly.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://m.media-amazon.com/images/I/61JzF9g4xFL._AC_SL1500_.jpg" alt="Amazon Music and Video Streaming">
+            <div>
+                <h3><a href="https://music.amazon.com" target="_blank">Amazon Music and Video Streaming</a></h3>
+                <p>Amazon offers a wide range of streaming options, including music, movies, TV shows, and original content.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
         <h2>About Us</h2>
         <audio controls>
@@ -35,26 +168,7 @@
                 <th>Address</th>
                 <td>410 Terry Ave N, Seattle, WA 98109, USA</td>
             </tr>
-            <tr>
-                <th>Contact</th>
-                <td>(206) 266-1000</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><a href="mailto:info@amazon.com">info@amazon.com</a></td>
-            </tr>
         </table>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Online Retail</li>
-            <li>Amazon Prime Membership</li>
-            <li>Amazon Web Services (AWS)</li>
-            <li>Kindle eBooks and Devices</li>
-            <li>Amazon Music and Video Streaming</li>
-        </ul>
     </section>
 
     <section id="promotions">
@@ -68,6 +182,9 @@
 
 <footer>
     <h2>Contact Us</h2>
+    <p>For inquiries, please contact us:</p>
+    <p>Phone: (206) 266-1000</p>
+    <p>Email: <a href="mailto:info@amazon.com">info@amazon.com</a></p>
     <p>Follow us on social media:</p>
     <ul>
         <li><a href="https://facebook.com/amazon" target="_blank">Facebook</a></li>
