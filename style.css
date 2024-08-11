@@ -1,0 +1,108 @@
+/* External CSS Inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff; /* Header color: Blue */
+    color: #fff; /* Header text color: White */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343a40; /* Footer color: Dark gray */
+    color: #fff; /* Footer text color: White */
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Margins and Padding */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Rounded Border */
+.service-item {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for service items */
+}
+
+/* ID Selector */
+#services {
+    padding: 40px;
+}
+
+/* Class Selector */
+.service-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Web Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Attribute Selector */
+a[target="_blank"]::after {
+    content: " \2197"; /* External link icon */
+}
+
+/* Pseudo-class Selector */
+nav a:hover {
+    color: #000; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Pseudo-element Selector */
+footer p::before {
+    content: "✉ "; /* Mail icon before footer contact info */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Video and Audio Controls */
+video, audio {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for media elements */
+}
