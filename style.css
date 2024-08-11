@@ -6,49 +6,84 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f5ff; /* Light blue background */
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #007bff; /* Header color: Blue */
-    color: #fff; /* Header text color: White */
-    padding: 10px;
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
 footer {
-    background-color: #343a40; /* Footer color: Dark gray */
-    color: #fff; /* Footer text color: White */
-    padding: 10px;
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
 h1, h2, h3 {
-    color: #333;
-}
-
-p {
-    line-height: 1.5;
+    color: #232f3e;
 }
 
 /* Margins and Padding */
 main {
-    background-color: #ffffff;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #ffffff, #e6f0ff); /* Subtle gradient background */
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* Rounded Border */
 .service-item {
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #d1e0ff;
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9; /* Light background for service items */
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* ID Selector */
@@ -60,6 +95,8 @@ section {
 .service-item img {
     float: left;
     margin-right: 20px;
+    width: 100px;
+    height: auto;
 }
 
 /* Web Fonts */
@@ -69,18 +106,18 @@ body {
 
 /* Attribute Selector */
 a[target="_blank"]::after {
-    content: " \2197"; /* External link icon */
+    content: " \2197";
+    font-size: 0.8em;
 }
 
 /* Pseudo-class Selector */
 nav a:hover {
-    color: #000; /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 /* Pseudo-element Selector */
 footer p::before {
-    content: "✉ "; /* Mail icon before footer contact info */
+    content: "✉ ";
 }
 
 /* Table Styles */
@@ -88,21 +125,71 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #d1e0ff;
     text-align: left;
 }
 
 caption {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #232f3e;
 }
 
 /* Video and Audio Controls */
 video, audio {
     max-width: 100%;
-    border-radius: 10px; /* Rounded corners for media elements */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #232f3e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Social media links */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff9900;
 }
